@@ -1,4 +1,4 @@
-package rapcal.spectra.com.rapcal;
+package com.spectra.rapcal;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("rapcal.spectra.com.rapcal", appContext.getPackageName());
+        assertEquals("com.spectra.rapcal", appContext.getPackageName());
     }
 }

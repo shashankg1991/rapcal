@@ -1,4 +1,4 @@
-package rapcal.spectra.com.rapcal;
+package com.spectra.rapcal;
 
 import org.junit.Test;
 

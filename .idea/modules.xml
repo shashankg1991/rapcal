@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RapCal.iml" filepath="$PROJECT_DIR$/RapCal.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rapcal.iml" filepath="$PROJECT_DIR$/rapcal.iml" />
     </modules>
   </component>
 </project>
