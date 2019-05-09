@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Rap Calculator</string>
+    <string name="text_username">Username</string>
+    <string name="text_password">Password</string>
     <string name="text_dollarRate">Dollar Rate</string>
-    <string name="button_ok">OK</string>
+    <string name="button_login">Login</string>
 </resources>
