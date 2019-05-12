@@ -17,8 +17,7 @@
         android:ems="10"
         android:hint="@string/text_username"
         android:inputType="textPersonName"
-        android:textColor="@color/black"
-        android:text="shashank" />
+        android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/frag_login_editText_password"
@@ -29,8 +28,7 @@
         android:ems="10"
         android:hint="@string/text_password"
         android:inputType="numberPassword"
-        android:textColor="@color/black"
-        android:text="123456" />
+        android:textColor="@color/black" />
 
     <EditText
         android:id="@+id/frag_login_editText_dollarRate"
@@ -38,11 +36,10 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_thin"
         android:layout_marginVertical="@dimen/margin_thin"
-        android:textColor="@color/black"
         android:ems="10"
         android:hint="@string/text_dollarRate"
         android:inputType="textPersonName|numberDecimal"
-        android:text="70" />
+        android:textColor="@color/black" />
 
     <Button
         android:id="@+id/frag_login_button_login"

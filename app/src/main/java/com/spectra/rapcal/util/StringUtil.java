@@ -38,4 +38,12 @@ public class StringUtil {
             return 0.0d;
         }
     }
+
+    public static Double getDoubleValue(String text) {
+        try {
+            return Double.valueOf(text);
+        } catch (Exception e) {
+            return 0.0d;
+        }
+    }
 }

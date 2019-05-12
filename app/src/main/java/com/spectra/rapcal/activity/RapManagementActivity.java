@@ -28,4 +28,9 @@ public class RapManagementActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        return;
+    }
+
 }

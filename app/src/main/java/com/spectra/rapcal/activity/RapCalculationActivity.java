@@ -42,4 +42,9 @@ public class RapCalculationActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onBackPressed() {
+        return;
+    }
+
 }

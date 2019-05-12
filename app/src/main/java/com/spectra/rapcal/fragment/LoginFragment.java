@@ -3,9 +3,6 @@ package com.spectra.rapcal.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +16,8 @@ import com.spectra.rapcal.activity.LoginActivity;
 import com.spectra.rapcal.activity.OptionsActivity;
 import com.spectra.rapcal.persistence.service.UserService;
 import com.spectra.rapcal.util.StringUtil;
+
+import androidx.fragment.app.Fragment;
 
 
 /**
@@ -71,7 +70,7 @@ public class LoginFragment extends Fragment implements View.OnClickListener {
                     return;
                 } else if (UserService.getInstance().login(username, password)) {
                     Toast.makeText(getActivity(), "Login successful", Toast.LENGTH_SHORT).show();
-                    LoginActivity.dollarRate = Double.valueOf(dollarRate);
+                    LoginActivity.dollarRate = StringUtil.getDoubleValue(dollarRate);
                     Intent intent = new Intent(getActivity(), OptionsActivity.class);
                     startActivity(intent);
 

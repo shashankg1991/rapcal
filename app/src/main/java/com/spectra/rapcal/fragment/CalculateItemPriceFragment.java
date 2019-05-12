@@ -155,7 +155,7 @@ public class CalculateItemPriceFragment extends Fragment implements View.OnClick
                 }
                 break;
             case R.id.frag_calc_item_price_button_calculate:
-                Rap rap = RapService.getInstance().getRap(shape, color, purity, Double.valueOf(weight));
+                Rap rap = RapService.getInstance().getRap(shape, color, purity, StringUtil.getDoubleValue(weight));
                 Double value = StoneService.getInstance().calculate(shape, color, purity, weight, discount);
                 if (null != rap) {
                     textViewRapValue.setText(rap.getValue().toString());
@@ -163,15 +163,16 @@ public class CalculateItemPriceFragment extends Fragment implements View.OnClick
                 } else {
                     Toast.makeText(getActivity(), "Rap not found!!", Toast.LENGTH_SHORT).show();
                 }
-
+                break;
             case R.id.frag_calc_item_price_button_viewRap:
                 if (StringUtil.isEmpty(editTextCertificate.getText().toString())) {
                     Toast.makeText(getActivity(), "Please enter reprot number!!", Toast.LENGTH_SHORT).show();
                 }
                 Intent intentOnlineReportActivity = new Intent(getActivity(), OnlineReportActivity.class);
-                intentOnlineReportActivity.putExtra(RapCalConstants.REPORT_TYPE,spinnerCertificateType.getSelectedItem().toString());
-                intentOnlineReportActivity.putExtra(RapCalConstants.REPORT_ID,editTextCertificate.getText().toString());
+                intentOnlineReportActivity.putExtra(RapCalConstants.REPORT_TYPE, spinnerCertificateType.getSelectedItem().toString());
+                intentOnlineReportActivity.putExtra(RapCalConstants.REPORT_ID, editTextCertificate.getText().toString());
                 getActivity().startActivity(intentOnlineReportActivity);
+                break;
         }
 
     }

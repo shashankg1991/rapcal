@@ -1,9 +1,7 @@
 package com.spectra.rapcal.persistence.service;
 
-import android.content.Intent;
-
 import com.spectra.rapcal.persistence.entity.Rap;
-import com.spectra.rapcal.persistence.entity.User;
+import com.spectra.rapcal.util.StringUtil;
 
 import java.util.List;
 
@@ -25,9 +23,9 @@ public class RapService {
         rap.setShape(shape);
         rap.setColor(color);
         rap.setPurity(purity);
-        rap.setFromWeight(Double.valueOf(lowerLimit));
-        rap.setToWeight(Double.valueOf(upperLimit));
-        rap.setValue(Double.valueOf(value));
+        rap.setFromWeight(StringUtil.getDoubleValue(lowerLimit));
+        rap.setToWeight(StringUtil.getDoubleValue(upperLimit));
+        rap.setValue(StringUtil.getDoubleValue(value));
         PersistanceService.getInstance().getDb().rapDao().addRap(rap);
     }
 
@@ -37,9 +35,9 @@ public class RapService {
         rap.setShape(shape);
         rap.setColor(color);
         rap.setPurity(purity);
-        rap.setFromWeight(Double.valueOf(lowerLimit));
-        rap.setToWeight(Double.valueOf(upperLimit));
-        rap.setValue(Double.valueOf(value));
+        rap.setFromWeight(StringUtil.getDoubleValue(lowerLimit));
+        rap.setToWeight(StringUtil.getDoubleValue(upperLimit));
+        rap.setValue(StringUtil.getDoubleValue(value));
         PersistanceService.getInstance().getDb().rapDao().addRap(rap);
     }
 
