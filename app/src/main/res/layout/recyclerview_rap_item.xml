@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/recyclerview_rap_textview_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingHorizontal="@dimen/margin_thin"
+                android:paddingVertical="@dimen/margin_thin"
+                android:textColor="@color/black"
+                android:text="TextView" />
+            <TextView
+                android:id="@+id/recyclerview_rap_textview_shape"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingHorizontal="@dimen/margin_thin"
+                android:paddingVertical="@dimen/margin_thin"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/recyclerview_rap_textview_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:paddingHorizontal="@dimen/margin_thin"
+                android:paddingVertical="@dimen/margin_thin"
+                android:textColor="@color/black"
+                android:text="TextView" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/recyclerview_rap_textview_colorPurity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:paddingHorizontal="@dimen/margin_thin"
+                android:paddingVertical="@dimen/margin_thin"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/recyclerview_rap_button_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_marginVertical="@dimen/margin_thin"
+                android:layout_marginHorizontal="@dimen/margin_thin"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="@string/text_edit" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/recyclerview_rap_textview_range"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:paddingHorizontal="@dimen/margin_thin"
+                android:paddingVertical="@dimen/margin_thin"
+                android:textColor="@color/black"
+                android:text="TextView" />
+
+            <Button
+                android:id="@+id/recyclerview_rap_button_delete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_marginVertical="@dimen/margin_thin"
+                android:layout_marginHorizontal="@dimen/margin_thin"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="@string/text_delete" />
+        </TableRow>
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

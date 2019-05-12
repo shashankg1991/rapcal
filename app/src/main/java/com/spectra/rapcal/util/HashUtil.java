@@ -1,4 +1,4 @@
-package com.spectra.rapcal;
+package com.spectra.rapcal.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

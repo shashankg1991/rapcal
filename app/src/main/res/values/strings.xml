@@ -4,4 +4,36 @@
     <string name="text_password">Password</string>
     <string name="text_dollarRate">Dollar Rate</string>
     <string name="button_login">Login</string>
+    <string name="button_register">Register</string>
+    <string name="link_register">New user? Register</string>
+    <string name="text_key">Application Key</string>
+    <string name="title_activity_rap_management">Manage Rap</string>
+    <string name="title_activity_rap_calculation">Calculate</string>
+    <string name="title_activity_calculated_items_management">Saved Calculated Items
+    </string>
+    <string name="text_manage_rap">Manage Rap</string>
+    <string name="text_calculate">Calculate</string>
+    <string name="text_manage_calculated">See Saved Items</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_shape">Shape</string>
+    <string name="text_color">Color</string>
+    <string name="text_purity">Purity</string>
+    <string name="text_from">From</string>
+    <string name="text_to">To</string>
+    <string name="test_rap_rate">Rap Rate Per Ct.</string>
+    <string name="text_save">Save</string>
+    <string name="text_edit">Edit</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_add_rap">Add Rap</string>
+    <string name="text_weight">Weight</string>
+    <string name="text_discount">Disc.</string>
+    <string name="text_id">ID :</string>
+    <string name="text_blank">-</string>
+    <string name="text_party">Party</string>
+    <string name="text_comments">Comment</string>
+    <string name="text_certificate">Cert.</string>
+    <string name="text_value">Value (in Rs.)</string>
+    <string name="text_rap">Rap (in $ per carat)</string>
 </resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.LoginFragment">
+
+    <EditText
+        android:id="@+id/frag_login_editText_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_thin"
+        android:layout_marginVertical="@dimen/margin_thin"
+        android:ems="10"
+        android:hint="@string/text_username"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:text="shashank" />
+
+    <EditText
+        android:id="@+id/frag_login_editText_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_thin"
+        android:layout_marginVertical="@dimen/margin_thin"
+        android:ems="10"
+        android:hint="@string/text_password"
+        android:inputType="numberPassword"
+        android:textColor="@color/black"
+        android:text="123456" />
+
+    <EditText
+        android:id="@+id/frag_login_editText_dollarRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_thin"
+        android:layout_marginVertical="@dimen/margin_thin"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="@string/text_dollarRate"
+        android:inputType="textPersonName|numberDecimal"
+        android:text="70" />
+
+    <Button
+        android:id="@+id/frag_login_button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_thin"
+        android:layout_marginVertical="@dimen/margin_thin"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="@string/button_login" />
+
+    <TextView
+        android:id="@+id/frag_login_textView_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_thin"
+        android:textColor="@color/black"
+        android:layout_marginVertical="@dimen/margin_thin"
+        android:text="@string/link_register" />
+
+</LinearLayout>

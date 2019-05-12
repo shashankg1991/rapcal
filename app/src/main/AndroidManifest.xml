@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.spectra.rapcal">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,14 +11,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".OptionsActivity"></activity>
+        <activity android:name=".activity.OptionsActivity" />
+        <activity
+            android:name=".activity.RapManagementActivity"
+            android:label="@string/title_activity_rap_management"
+            android:parentActivityName=".activity.OptionsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.OptionsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.RapCalculationActivity"
+            android:label="@string/title_activity_rap_calculation"
+            android:parentActivityName=".activity.OptionsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.OptionsActivity" />
+        </activity>
+        <activity
+            android:name=".activity.CalculatedItemsManagementActivity"
+            android:label="@string/title_activity_calculated_items_management"
+            android:parentActivityName=".activity.OptionsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.OptionsActivity" />
+        </activity>
+        <activity android:name=".activity.OnlineReportActivity"
+            android:parentActivityName=".activity.OptionsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.OptionsActivity" />
+        </activity>
     </application>
 
 </manifest>
