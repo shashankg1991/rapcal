@@ -16,6 +16,15 @@
         android:background="@color/colorPrimary"
         android:textColor="@color/white"
         android:text="@string/text_add_rap" />
+    <Button
+        android:id="@+id/frag_view_raps_button_updateraps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/margin_thin"
+        android:layout_marginHorizontal="@dimen/margin_thin"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="@string/text_update_raps" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/frag_view_raps_recylerView"

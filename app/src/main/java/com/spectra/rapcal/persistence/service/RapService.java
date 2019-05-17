@@ -56,4 +56,8 @@ public class RapService {
     public Rap getRap(String shape, String color, String purity, Double weight) {
         return PersistanceService.getInstance().getDb().rapDao().findRap(color, purity, shape, weight);
     }
+
+    public void updateRaps(List<Rap> raps) {
+        PersistanceService.getInstance().getDb().rapDao().insertAll(raps);
+    }
 }

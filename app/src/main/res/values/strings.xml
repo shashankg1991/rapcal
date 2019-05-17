@@ -25,6 +25,7 @@
     <string name="text_edit">Edit</string>
     <string name="text_delete">Delete</string>
     <string name="text_add_rap">Add Rap</string>
+    <string name="text_update_raps">Update Raps</string>
     <string name="text_weight">Weight</string>
     <string name="text_discount">Disc.</string>
     <string name="text_id">ID :</string>

@@ -11,4 +11,6 @@ public class RapCalConstants {
     public static final String REPORT_TYPE = "reportType";
     public static final String IGI = "IGI";
     public static final String GIA = "GIA";
+    public static final String JSON_RAPS = "raps";
+    public static final String RAPS_UPDATE_URL = "https://shashankg1991.github.io/rapcal/rap.json";
 }

@@ -15,9 +15,9 @@ public interface RapDao {
     public void addRap(Rap rap);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    void insertAll(Rap... raps);
+    void insertAll(List<Rap> raps);
 
-    @Query("SELECT * FROM raps")
+    @Query("SELECT * FROM raps order by fromWeight,toWeight,color")
     public List<Rap> findAllRaps();
 
     @Query("SELECT * FROM raps where id =:id")
@@ -25,6 +25,9 @@ public interface RapDao {
 
     @Query("DELETE from raps where id = :id")
     public void deleteRap(Integer id);
+
+    @Query("DELETE from raps")
+    public void deleteAllRaps();
 
     @Query("SELECT * FROM raps WHERE color = :color and purity = :purity and shape= :shape and fromWeight = :lowerLimit and toWeight = :upperLimit")
     public List<Rap> findRap(String color, String purity, String shape, double lowerLimit, double upperLimit);

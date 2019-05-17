@@ -28,18 +28,7 @@ public class PersistanceService extends Application {
             persistanceService = new PersistanceService();
         }
         context = contextValue;
-        rapCalDB = Room.databaseBuilder(context, RapCalDB.class, RAPCAL_DB).addCallback(new RoomDatabase.Callback() {
-            @Override
-            public void onCreate(@NonNull SupportSQLiteDatabase db) {
-                super.onCreate(db);
-                Executors.newSingleThreadScheduledExecutor().execute(new Runnable() {
-                    @Override
-                    public void run() {
-                        getInstance().getDb().rapDao().insertAll(Rap.populateRaps());
-                    }
-                });
-            }
-        }).allowMainThreadQueries().build();
+        rapCalDB = Room.databaseBuilder(context, RapCalDB.class, RAPCAL_DB).allowMainThreadQueries().build();
         return persistanceService;
     }
 

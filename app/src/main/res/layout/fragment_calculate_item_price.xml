@@ -198,7 +198,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="@dimen/margin_thin"
                     android:layout_weight="7"
-                    android:inputType="text"
+                    android:inputType="number"
                     android:textColor="@color/black" />
 
                 <ImageButton
