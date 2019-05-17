@@ -27,13 +27,13 @@ public class StoneService {
         stone.setShape(shape);
         stone.setColor(color);
         stone.setPurity(purity);
-        stone.setWeight(null != weight ?  StringUtil.getDoubleValue(weight) : 0d);
+        stone.setWeight(null != weight ? StringUtil.getDoubleValue(weight) : 0d);
         stone.setValue(calculate(shape, color, purity, weight, discount));
         stone.setParty(party);
         stone.setReportId(reportId);
         stone.setCertificateType(certificateType);
         stone.setComments(comments);
-        stone.setDiscountPercentage( StringUtil.getDoubleValue(discount));
+        stone.setDiscountPercentage(StringUtil.getDoubleValue(discount));
         PersistanceService.getInstance().getDb().stoneDao().addStone(stone);
     }
 
@@ -43,7 +43,7 @@ public class StoneService {
         stone.setShape(shape);
         stone.setColor(color);
         stone.setPurity(purity);
-        stone.setWeight( StringUtil.getDoubleValue(weight));
+        stone.setWeight(StringUtil.getDoubleValue(weight));
         stone.setValue(calculate(shape, color, purity, weight, discount));
         stone.setParty(party);
         stone.setReportId(reportId);
@@ -65,11 +65,11 @@ public class StoneService {
     }
 
     public Double calculate(String shape, String color, String purity, String weight, String discount) {
-        Rap rap = RapService.getInstance().getRap(shape, color, purity,  StringUtil.getDoubleValue(weight));
+        Rap rap = RapService.getInstance().getRap(shape, color, purity, StringUtil.getDoubleValue(weight));
         if (null == rap) {
             return 0.0d;
         } else {
-            return (double)Math.round(rap.getValue() * (1 - ( StringUtil.getDoubleValue(discount) / 100)) *  StringUtil.getDoubleValue(weight) * LoginActivity.dollarRate);
+            return (double) Math.round(rap.getValue() * 100 * (1 - (StringUtil.getDoubleValue(discount) / 100)) * StringUtil.getDoubleValue(weight) * LoginActivity.dollarRate);
         }
     }
 

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white">
@@ -18,83 +19,72 @@
                 android:id="@+id/recyclerview_rap_textview_id"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:paddingHorizontal="@dimen/margin_thin"
+                android:layout_weight="0"
                 android:paddingVertical="@dimen/margin_thin"
+                android:text="TextView"
                 android:textColor="@color/black"
-                android:text="TextView" />
+                android:visibility="invisible" />
+
             <TextView
                 android:id="@+id/recyclerview_rap_textview_shape"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="5"
-                android:paddingHorizontal="@dimen/margin_thin"
+                android:layout_weight="3"
+                android:paddingLeft="@dimen/margin_thin"
                 android:paddingVertical="@dimen/margin_thin"
-                android:textColor="@color/black"
-                android:text="TextView" />
-
-            <TextView
-                android:id="@+id/recyclerview_rap_textview_value"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="5"
-                android:paddingHorizontal="@dimen/margin_thin"
-                android:paddingVertical="@dimen/margin_thin"
-                android:textColor="@color/black"
-                android:text="TextView" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                android:text="TextView"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/recyclerview_rap_textview_colorPurity"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="6"
-                android:paddingHorizontal="@dimen/margin_thin"
+                android:layout_weight="3"
                 android:paddingVertical="@dimen/margin_thin"
-                android:textColor="@color/black"
-                android:text="TextView" />
-
-            <Button
-                android:id="@+id/recyclerview_rap_button_edit"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:layout_marginVertical="@dimen/margin_thin"
-                android:layout_marginHorizontal="@dimen/margin_thin"
-                android:background="@color/colorPrimary"
-                android:textColor="@color/white"
-                android:text="@string/text_edit" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                android:text="TextView"
+                android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/recyclerview_rap_textview_range"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="6"
-                android:paddingHorizontal="@dimen/margin_thin"
+                android:layout_weight="4"
                 android:paddingVertical="@dimen/margin_thin"
-                android:textColor="@color/black"
-                android:text="TextView" />
+                android:text="TextView"
+                android:textColor="@color/black" />
 
-            <Button
-                android:id="@+id/recyclerview_rap_button_delete"
+            <TextView
+                android:id="@+id/recyclerview_rap_textview_value"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:layout_marginVertical="@dimen/margin_thin"
-                android:layout_marginHorizontal="@dimen/margin_thin"
-                android:background="@color/colorPrimary"
-                android:textColor="@color/white"
-                android:text="@string/text_delete" />
-        </TableRow>
+                android:layout_weight="3"
+                android:paddingVertical="@dimen/margin_thin"
+                android:text="TextView"
+                android:textColor="@color/black" />
 
+            <ImageButton
+                android:id="@+id/recyclerview_rap_button_edit"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_thin"
+                android:paddingRight="@dimen/margin_thin"
+                android:layout_weight="1"
+                android:layout_width="7dp"
+                android:adjustViewBounds="false"
+                android:background="@color/white"
+                android:cropToPadding="false"
+                android:textColor="@color/white"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <ImageButton
+                android:id="@+id/recyclerview_rap_button_delete"
+                android:layout_width="7dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_thin"
+                android:layout_marginRight="@dimen/margin_thin"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:textColor="@color/white"
+                app:srcCompat="@android:drawable/ic_delete" />
+        </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

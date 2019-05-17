@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.spectra.rapcal.R;
@@ -43,11 +44,11 @@ public class RapRecylerViewAdapter extends Adapter<RapRecylerViewAdapter.RapView
     @Override
     public void onBindViewHolder(@NonNull RapViewHolder holder, int position) {
         Rap rap = raps.get(position);
-        holder.textViewId.setText("ID : " + rap.getId());
-        holder.textViewRapValue.setText("Rap : $" + rap.getValue());
-        holder.textViewShape.setText("Shape : " + rap.getShape());
-        holder.textViewColorPurity.setText("Quality : " + rap.getColor() + " " + rap.getPurity());
-        holder.textViewRange.setText("Weight Range : " + rap.getFromWeight() + " - " + rap.getToWeight());
+        holder.textViewId.setText("#" + rap.getId());
+        holder.textViewRapValue.setText("$" + rap.getValue());
+        holder.textViewShape.setText("" + rap.getShape());
+        holder.textViewColorPurity.setText(rap.getColor() + "-" + rap.getPurity());
+        holder.textViewRange.setText(rap.getFromWeight() + "-" + rap.getToWeight() + "ct");
     }
 
     @Override
@@ -58,7 +59,7 @@ public class RapRecylerViewAdapter extends Adapter<RapRecylerViewAdapter.RapView
     //Responsible for each item in list
     public static class RapViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView textViewId, textViewShape, textViewColorPurity, textViewRapValue, textViewRange;
-        Button buttonEditRap, buttonDeleteRap;
+        ImageButton buttonEditRap, buttonDeleteRap;
 
         public RapViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -75,7 +76,7 @@ public class RapRecylerViewAdapter extends Adapter<RapRecylerViewAdapter.RapView
 
         @Override
         public void onClick(View view) {
-            Integer rapId = Integer.valueOf(textViewId.getText().toString().split(":")[1].trim());
+            Integer rapId = Integer.valueOf(textViewId.getText().toString().split("#")[1].trim());
             switch (view.getId()) {
                 case R.id.recyclerview_rap_button_edit:
                     Fragment addEditRapFragment = new AddEditRapFragment();

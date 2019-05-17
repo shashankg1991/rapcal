@@ -53,4 +53,14 @@
         android:textColor="@color/white"
         android:text="@string/text_manage_calculated" />
 
+    <Button
+        android:id="@+id/activity_options_button_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_thin"
+        android:background="@color/colorPrimary"
+        android:layout_marginVertical="@dimen/margin_thin"
+        android:textColor="@color/white"
+        android:text="@string/text_exit" />
+
 </LinearLayout>
